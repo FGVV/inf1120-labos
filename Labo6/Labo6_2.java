@@ -15,7 +15,7 @@ public class Labo6_2 {
             System.out.print("\n");
 
             // Afficher le milieu
-            for(int ligne = 2; ligne < hauteur; ligne++) {
+            for(int ligne = 1; ligne <= hauteur - 2; ligne++) {
                 afficherVide(largeur);
                 System.out.print("\n");
             }
@@ -28,22 +28,13 @@ public class Labo6_2 {
         }
     }
 
-    public static void afficherVide (int largeur) {
-        afficherNfois(1, '*');
-        afficherNfois(largeur - 2, ' ');
-        if(largeur > 1) {
-            afficherNfois(1, '*');
-        }
-
-    }
-
     public static void afficherCarre  (int cote) {
         if(cote <= 0) {
             System.out.println("*Erreur: cote invalide.");
         } else {
             afficherRectangle(cote, cote);
         }
-    }
+    }    
 
     public static void afficherTriangleIsoGauche (int hauteur){
         if(hauteur <= 0) {
@@ -53,7 +44,7 @@ public class Labo6_2 {
 
             for(int i = 2; i < hauteur; i++) {
                 afficherVide(i);
-                System.out.println("\n");
+                System.out.print("\n");
             }
 
             if(hauteur > 1) {
@@ -63,6 +54,14 @@ public class Labo6_2 {
         }
     }
 
+    public static void afficherVide (int largeur) {
+        afficherNfois(1, '*');
+        afficherNfois(largeur - 2, ' ');
+        if(largeur > 1) {
+            afficherNfois(1, '*');
+        }
+    }
+    
     public static void afficherTriangleIsoDroit (int hauteur){
         if(hauteur <= 0) {
             System.out.println("*Erreur: hauteur invalide.");

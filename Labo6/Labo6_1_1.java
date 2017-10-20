@@ -8,6 +8,6 @@ public class Labo6_1_1 {
     }
 
     public static void main (String[] arguments) {
-        afficherMenu ();
+        afficherMenu();
     }
 }

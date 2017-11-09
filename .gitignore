@@ -1,9 +1,7 @@
 *.class
 *.ctxt
-*.bluej
 Directives*.pdf
 todo*.md
 *.swp
 Labo5/*
 !Labo5/.gitkeep
-

@@ -2,10 +2,10 @@
 dependency1.from=TesterAnimal
 dependency1.to=Animal
 dependency1.type=UsesDependency
-editor.fx.0.height=1056
-editor.fx.0.width=1855
-editor.fx.0.x=65
-editor.fx.0.y=24
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=147
 objectbench.width=776
 package.divider.horizontal=0.6

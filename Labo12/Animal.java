@@ -39,24 +39,27 @@ public class Animal {
         return proprio;
     }
 
-    public int getNbAnimaux(){
-      return nbAnimaux;
+    public void setNom(String nom){
+        this.nom = nom;
     }
 
-    public void setNom(String nom){
-      this.nom = nom;
+    public void setSorte(int sorte){
+        if(sorte >=0 && sorte <= 3){
+            this.sorte = sorte;
+        }
+    }
+
+    public void setRace(String race){
+        this.race = race;
+    }
+
+    public void setProprio(String proprio){
+        this.proprio = proprio;
     }
 
     public void afficher () {
         System.out.println ( "nom : " + nom );
-        System.out.print ( "sorte : " );
-        if (sorte == 1) {
-            System.out.println ( "chat" );
-        } else if (sorte == 2) {
-            System.out.println ( "chien" );
-        } else {
-            System.out.println ( "inconnu" );
-        }
+        System.out.print ( "sorte : " + sorte);
         System.out.println ( "race : " + race );
         System.out.println ( "proprio : " + proprio );
     }
